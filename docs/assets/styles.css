@@ -79,7 +79,7 @@ p {
 }
 
 /* header */
-header {
+.header-menu {
     background-color: var(--yinmn-blue);
     padding: 2rem 3rem;
     width: 100%;
