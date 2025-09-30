@@ -9,7 +9,7 @@
 <body>
     <header class="container">
         <div class="header-content">
-            <div class="logo">
+            <div>
                 <a href="/index.html">
                     <img src="./assets/images/logo.png" alt="logo iTec" class="logo-img">
                 </a>
@@ -33,12 +33,12 @@
                 <h1>Nosotros</h1>
                 <div class="hero-text">
                     <div class="left">
-                        <h2>Innovación y Excelencia en <br>Soluciones Tecnológicas</h2>
+                        <h2>Innovación y Excelencia<br>en Soluciones Tecnológicas</h2>
                     </div>
 
                     <div class="right">
                         <p class="lead">En ITecAdvanced, transformamos la complejidad tecnológica en soluciones simples y efectivas. Somos tu socio estratégico para el crecimiento y la innovación en el mundo digital.</p>
-                        <a href="#contacto" class="btn">Contáctanos</a>
+                        <a href="mailto:info@itecadvanced.com" class="btn">Contáctanos</a>
                     </div>
                 </div> 
 
@@ -49,19 +49,19 @@
         <section id="intro">
             <article>
                 <img src="./assets/images/iconos/i-especializacion.png" alt="icono" class="icono">
-                <h4>Especialización <br>Profunda</h4>
+                <h4>Especialización <span class="line-break">Profunda</span></h4>
                 <p>Somos una empresa dedicada a ofrecer servicios avanzados de tecnología de la información, con un enfoque en soluciones integrales y personalizadas para las necesidades específicas de cada cliente.</p>
             </article>
 
             <article>
                 <img src="./assets/images/iconos/i-decada.png" alt="icono" class="icono">
-                <h4>Década de <br>Experiencia</h4>
+                <h4>Década de <span class="line-break">Experiencia</span></h4>
                 <p>Contamos con más de diez años de trayectoria en la ejecución exitosa de proyectos complejos en diversos sectores, tanto a nivel gobierno como sector privado, consolidando nuestra experiencia y conocimiento.</p>
             </article>
 
             <article>
                 <img src="./assets/images/iconos/i-compromiso.png" alt="icono" class="icono">
-                <h4>Compromiso <br>Inquebrantable</h4>
+                <h4>Compromiso <span class="line-break">Inquebrantable</span></h4>
                 <p>Nuestro pilar es la dedicación a la calidad, seguridad y eficiencia en cada solución que entregamos, garantizando resultados óptimos y la máxima satisfacción del cliente.</p>
             </article>
         </section>
@@ -85,23 +85,58 @@
             <img src="./assets/images/intro-image.jpg" alt="imagen decoracion" class="img-fluid-content">
         </section>
 
-        <section id="clientes" class="container">
-            <h2>Nuestros Clientes</h2>
-            <div class="clientes-container">
-                <img src="" alt="logo empresa" class="img-thumbnail">
-                <img src="" alt="logo empresa" class="img-thumbnail">
-                <img src="" alt="logo empresa" class="img-thumbnail">
-                <img src="" alt="logo empresa" class="img-thumbnail">
-                <img src="" alt="logo empresa" class="img-thumbnail">
-                <img src="" alt="logo empresa" class="img-thumbnail">
-                <img src="" alt="logo empresa" class="img-thumbnail">
-                <img src="" alt="logo empresa" class="img-thumbnail">
-                <img src="" alt="logo empresa" class="img-thumbnail">
-                <img src="" alt="logo empresa" class="img-thumbnail">    
-                <img src="" alt="logo empresa" class="img-thumbnail">
-                <img src="" alt="logo empresa" class="img-thumbnail">
-            </div>
-        </section>
+        <section id="clientes">
+      <h2>Nuestros Clientes</h2>
+      <div class="carousel">
+        <div class="carousel-track">
+            <!-- Logos originales -->
+            <img src="./assets/images/logos/jrsys.png" alt="logo empresaJrsys" class="logo" />
+            <img src="./assets/images/logos/tigo.png" alt="logo Tigo" class="logo" />
+            <img src="./assets/images/logos/conseguros.png" alt="logo Conseguros" class="logo" />
+            <img src="./assets/images/logos/cmi.png" alt="logo CMI" class="logo" />
+            <img src="./assets/images/logos/energuate.png" alt="logo Energuate" class="logo" />
+            <img src="./assets/images/logos/url.png" alt="logo URL" class="logo" />
+            <img src="./assets/images/logos/sieca.png" alt="logo SIECA" class="logo" />
+            <img src="./assets/images/logos/sat.png" alt="logo SAT" class="logo" />
+            <img src="./assets/images/logos/epq.png" alt="logo EPQ" class="logo" />
+            <img src="./assets/images/logos/cdag.png" alt="logo CDAG" class="logo" />
+            <img src="./assets/images/logos/pnc.png" alt="logo PNC" class="logo" />
+            <img src="./assets/images/logos/sie.png" alt="logo SIE" class="logo" />
+            <img src="./assets/images/logos/minfin.png" alt="logo Minfin" class="logo" />
+            <img src="./assets/images/logos/mineco.png" alt="logo Mineco" class="logo" />
+            <img src="./assets/images/logos/hfinanzas.png" alt="logo SEFIN Honduras" class="logo" />
+            <img src="./assets/images/logos/oea.png" alt="logo OEA" class="logo" />
+            <img src="./assets/images/logos/bid.png" alt="logo BID" class="logo" />
+            <img src="./assets/images/logos/shacienda.png" alt="logo Ministerio de Hacienda" class="logo" />
+            <img src="./assets/images/logos/usaid.png" alt="logo USAID" class="logo" />
+            <img src="./assets/images/logos/infotec.png" alt="logo Infotec" class="logo" />
+            <img src="./assets/images/logos/mef.png" alt="loga MEF" class="logo" />
+
+            <!-- Duplicados para loop infinito -->
+            <img src="./assets/images/logos/jrsys.png" alt="logo empresaJrsys" class="logo" />
+            <img src="./assets/images/logos/tigo.png" alt="logo Tigo" class="logo" />
+            <img src="./assets/images/logos/conseguros.png" alt="logo Conseguros" class="logo" />
+            <img src="./assets/images/logos/cmi.png" alt="logo CMI" class="logo" />
+            <img src="./assets/images/logos/energuate.png" alt="logo Energuate" class="logo" />
+            <img src="./assets/images/logos/url.png" alt="logo URL" class="logo" />
+            <img src="./assets/images/logos/sieca.png" alt="logo SIECA" class="logo" />
+            <img src="./assets/images/logos/sat.png" alt="logo SAT" class="logo" />
+            <img src="./assets/images/logos/epq.png" alt="logo EPQ" class="logo" />
+            <img src="./assets/images/logos/cdag.png" alt="logo CDAG" class="logo" />
+            <img src="./assets/images/logos/pnc.png" alt="logo PNC" class="logo" />
+            <img src="./assets/images/logos/sie.png" alt="logo SIE" class="logo" />
+            <img src="./assets/images/logos/minfin.png" alt="logo Minfin" class="logo" />
+            <img src="./assets/images/logos/mineco.png" alt="logo Mineco" class="logo" />
+            <img src="./assets/images/logos/hfinanzas.png" alt="logo SEFIN Honduras" class="logo" />
+            <img src="./assets/images/logos/oea.png" alt="logo OEA" class="logo" />
+            <img src="./assets/images/logos/bid.png" alt="logo BID" class="logo" />
+            <img src="./assets/images/logos/shacienda.png" alt="logo Ministerio de Hacienda" class="logo" />
+            <img src="./assets/images/logos/usaid.png" alt="logo USAID" class="logo" />
+            <img src="./assets/images/logos/infotec.png" alt="logo Infotec" class="logo" />
+            <img src="./assets/images/logos/mef.png" alt="loga MEF" class="logo" />
+        </div>
+      </div>
+    </section>
 
         <section id="servicios">
             <h2>Nuestros Servicios</h2>
@@ -125,9 +160,10 @@
         </section>
 
         <section id="cta">
-            <h1>ITecAdvanced: <br>Tu Socio Estratégico en Tecnología</h1>
+            <h1>ITecAdvanced:</h1>
+            <h2>Tu Socio Estratégico en Tecnología</h2>
             <p>En ITecAdvanced, estamos comprometidos a ser más que un proveedor de servicios; somos tu socio estratégico, impulsando tu negocio hacia la excelencia digital.</p>
-            <a href="#contacto" class="btn">Contáctanos</a>
+            <a href="mailto:info@gitecadvanced.com" class="btn">Contáctanos</a>
         </section>
     </main>
 

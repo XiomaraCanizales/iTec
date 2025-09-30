@@ -26,11 +26,11 @@ body {
 h1 {
     font-size: 3.5rem;
     line-height: 1.1;
-    margin-bottom: 1.5rem;
+    
     font-weight: 800;
     letter-spacing: 1px;
     color: var(--white-smoke);
-    margin-bottom: 1.5rem;
+
 }
 
 h2 {
@@ -93,18 +93,19 @@ header {
 }
 
 .logo-img {
-    height: 3.125rem; 
+    height: 4rem; 
     vertical-align: middle;
+
 }
 
 nav a { 
     margin-left: 1.5rem;
     transition: transform 0.3s ease, color 0.3s ease; 
     text-transform: uppercase;
+    font-size: 0.85rem;
 }
 
 nav a:hover {
-    transform: translateY(-3px); 
     color: var(--satin-sheen-gold);
 }
 
@@ -114,7 +115,7 @@ nav a:hover {
 #hero {
     background-color: var(--yinmn-blue);
     width: 100%;
-    min-height: 60vh;
+    min-height: 50vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -139,7 +140,7 @@ nav a:hover {
 }
 
 .hero-text {
-    margin-top: 4rem; 
+    margin-top: 6rem; 
     color: var(--white-smoke);
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -160,7 +161,7 @@ nav a:hover {
 #intro {
     display: flex;
     justify-content: space-between;
-    min-height: 45vh;
+    min-height: 550px;
     background-color: var(--white-smoke);
     gap: 1.5rem;
     padding: 4rem;
@@ -171,7 +172,13 @@ nav a:hover {
 
 #intro article { 
     text-align: left; 
-    width: 25%;
+    width: 30%;
+}
+
+.line-break {
+    font-size: 1.25rem;
+    display: block;
+    margin-top: 0.5rem;
 }
 
 /* flotante */
@@ -182,8 +189,8 @@ nav a:hover {
 
     max-width: 1000px;
     margin: 0 auto;
-    margin-top: -100px;
-    margin-bottom: -100px;
+    margin-top: -6.25rem;
+    margin-bottom: -6.25rem;
     border-radius: 3rem;
     padding: 2rem;
 
@@ -194,10 +201,8 @@ nav a:hover {
     text-align: center;
 }
 
-.box {
-    flex-basis: 30%;
-    padding: 1rem 0;
-}
+.box { flex-basis: 30%; }
+
 .box span {
     display: block;
     font-size: 3rem;
@@ -217,7 +222,7 @@ nav a:hover {
     z-index: -1;
     position: relative;
     overflow: hidden;
-    height: 400px;
+    height: 25rem;
 }
 
 .img-fluid-content {
@@ -228,20 +233,61 @@ nav a:hover {
 
 /* clientes */
 #clientes {
-    height: 400px;  
     background-color: var(--yinmn-blue);
-    padding: 4rem;
+    padding: 2rem 4rem 4rem;
+    overflow: hidden;
 }
 
 #clientes h2 {
     text-align: center;
     color: var(--satin-sheen-gold);
+    padding-bottom: 2rem;
+}
+
+.carousel {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel-track {
+  display: flex;
+  width: max-content;
+  animation: scroll 60s linear infinite;
+}
+
+.carousel-track:hover {
+  animation-play-state: paused;
+}
+
+.logo {
+  height: 100px;      
+  width: auto;       
+  margin: 0 2rem;
+  filter: grayscale(100%);
+  opacity: 0.6;
+  transition: filter 0.3s ease, opacity 0.3s ease, transform 0.3s ease;
+  flex-shrink: 0;
+}
+
+.logo:hover {
+  filter: grayscale(0%);
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }
 
 /* servicios */
 #servicios {
     background-color: white;
-    height: 500px; 
     padding: 4rem;
 }
 
@@ -249,6 +295,7 @@ nav a:hover {
     display: flex;
     justify-content: space-between;
     text-align: center;
+    gap: 1.5rem;
 }
 
 #servicios h2 { text-align: center; }
@@ -266,8 +313,7 @@ nav a:hover {
 /* cta */
 #cta {
     background-color: var(--yinmn-blue);
-    height: 500px; 
-    padding: 5rem;
+    padding: 3rem 5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -276,6 +322,11 @@ nav a:hover {
 
 #cta h1 {
     text-align: center;
+    font-size: 3rem;
+}
+
+#cta h2 {
+    color: var(--white-smoke);
 }
 
 #cta p {
@@ -296,11 +347,13 @@ footer {
 
 @media (max-width: 992px) {
     nav { display: none; }
+    h1, h2 { text-align: center; }
+    #hero { height: auto; }
 
     .hero-text {
         grid-template-columns: 1fr; 
-        gap: 3rem;
-        margin-top: 3rem;
+        gap: 2rem;
+        margin-top: 1rem;
     }
     
     .right {
@@ -309,4 +362,17 @@ footer {
     }
     
     .lead { max-width: 90%; }
+
+    #intro, .servicios-container { 
+        flex-direction: column; 
+    }
+
+    #intro article, 
+    #servicios article { width: 100%; } 
+    .line-break { display: inline; }
+    #imagen-deco { display: none; }
+    #flotante { display: none; }
+    #cta h1 { font-size: 2.75rem; }
+    footer p, footer a { font-size: 0.85rem; }
+
 }
