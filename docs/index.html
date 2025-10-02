@@ -3,15 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/styles.css">
+    <link rel="stylesheet" href="./assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
     <title>iTec</title>
 </head>
 <body>
-    <header class="header-menu">
-        <div class="header-content">
+    <header class="header-menu container">
+        <div class="header-content flex-s-b">
             <div>
                 <a href="/index.html">
-                    <img src="./assets/images/logo.png" alt="logo iTec" class="logo-img">
+                    <img src="./assets/images/logo.png" alt="logo iTec" class="logo-itec">
                 </a>
             </div>
             
@@ -26,17 +27,17 @@
     </header>
 
     <main>
-        <section id="hero">
+        <section id="hero" class="flex-s-b container">
             <canvas class="particle-canvas" id="particleCanvas"></canvas>
             
-            <div class="hero-content">
+            <div class="hero-content flex-s-b">
                 <h1>Nosotros</h1>
                 <div class="hero-text">
-                    <div class="left">
+                    <div class="hero-content-left">
                         <h2>Innovación y Excelencia<br>en Soluciones Tecnológicas</h2>
                     </div>
 
-                    <div class="right">
+                    <div class="hero-content-right flex-s-b">
                         <p class="lead">En ITecAdvanced, transformamos la complejidad tecnológica en soluciones simples y efectivas. Somos tu socio estratégico para el crecimiento y la innovación en el mundo digital.</p>
                         <a href="mailto:info@itecadvanced.com" class="btn">Contáctanos</a>
                     </div>
@@ -46,27 +47,27 @@
         </section>
 
 
-        <section id="intro">
-            <article>
+        <section id="intro" class="flex-s-b container">
+            <article class="box">
                 <img src="./assets/images/iconos/i-especializacion.png" alt="icono" class="icono">
                 <h4>Especialización <span class="line-break">Profunda</span></h4>
                 <p>Somos una empresa dedicada a ofrecer servicios avanzados de tecnología de la información, con un enfoque en soluciones integrales y personalizadas para las necesidades específicas de cada cliente.</p>
             </article>
 
-            <article>
+            <article class="box">
                 <img src="./assets/images/iconos/i-decada.png" alt="icono" class="icono">
                 <h4>Década de <span class="line-break">Experiencia</span></h4>
                 <p>Contamos con más de diez años de trayectoria en la ejecución exitosa de proyectos complejos en diversos sectores, tanto a nivel gobierno como sector privado, consolidando nuestra experiencia y conocimiento.</p>
             </article>
 
-            <article>
+            <article class="box">
                 <img src="./assets/images/iconos/i-compromiso.png" alt="icono" class="icono">
                 <h4>Compromiso <span class="line-break">Inquebrantable</span></h4>
                 <p>Nuestro pilar es la dedicación a la calidad, seguridad y eficiencia en cada solución que entregamos, garantizando resultados óptimos y la máxima satisfacción del cliente.</p>
             </article>
         </section>
 
-        <section id="flotante">
+        <section id="flotante" class="flex-s-b">
             <div class="box">
                 <span>100+</span>
                 <p>Proyectos exitosos</p>
@@ -85,73 +86,73 @@
             <img src="./assets/images/intro-image.jpg" alt="imagen decoracion" class="img-fluid-content">
         </section>
 
-        <section id="clientes">
-      <h2>Nuestros Clientes</h2>
-      <div class="carousel">
-        <div class="carousel-track">
-            <!-- Logos originales -->
-            <img src="./assets/images/logos/jrsys.png" alt="logo Jrsys" class="logo" />
-            <img src="./assets/images/logos/tigo.png" alt="logo Tigo" class="logo" />
-            <img src="./assets/images/logos/conseguros.png" alt="logo Conseguros" class="logo" />
-            <img src="./assets/images/logos/cmi.png" alt="logo CMI" class="logo" />
-            <img src="./assets/images/logos/energuate.png" alt="logo Energuate" class="logo" />
-            <img src="./assets/images/logos/url.png" alt="logo URL" class="logo" />
-            <img src="./assets/images/logos/sieca.png" alt="logo SIECA" class="logo" />
-            <img src="./assets/images/logos/sat.png" alt="logo SAT" class="logo" />
-            <img src="./assets/images/logos/epq.png" alt="logo EPQ" class="logo" />
-            <img src="./assets/images/logos/cdag.png" alt="logo CDAG" class="logo" />
-            <img src="./assets/images/logos/pnc.png" alt="logo PNC" class="logo" />
-            <img src="./assets/images/logos/sie.png" alt="logo SIE" class="logo" />
-            <img src="./assets/images/logos/minfin.png" alt="logo Minfin" class="logo" />
-            <img src="./assets/images/logos/mineco.png" alt="logo Mineco" class="logo" />
-            <img src="./assets/images/logos/hfinanzas.png" alt="logo SEFIN Honduras" class="logo" />
-            <img src="./assets/images/logos/oea.png" alt="logo OEA" class="logo" />
-            <img src="./assets/images/logos/bid.png" alt="logo BID" class="logo" />
-            <img src="./assets/images/logos/shacienda.png" alt="logo Ministerio de Hacienda" class="logo" />
-            <img src="./assets/images/logos/usaid.png" alt="logo USAID" class="logo" />
-            <img src="./assets/images/logos/infotec.png" alt="logo Infotec" class="logo" />
-            <img src="./assets/images/logos/mef.png" alt="loga MEF" class="logo" />
+        <section id="clientes" class="container">
+            <h2>Nuestros Clientes</h2>
+            <div class="carousel">
+                <div class="carousel-track">
+                    <!-- Logos originales -->
+                    <img src="./assets/images/logos/jrsys.png" alt="logo Jrsys" class="logo" />
+                    <img src="./assets/images/logos/tigo.png" alt="logo Tigo" class="logo" />
+                    <img src="./assets/images/logos/conseguros.png" alt="logo Conseguros" class="logo" />
+                    <img src="./assets/images/logos/cmi.png" alt="logo CMI" class="logo" />
+                    <img src="./assets/images/logos/energuate.png" alt="logo Energuate" class="logo" />
+                    <img src="./assets/images/logos/url.png" alt="logo URL" class="logo" />
+                    <img src="./assets/images/logos/sieca.png" alt="logo SIECA" class="logo" />
+                    <img src="./assets/images/logos/sat.png" alt="logo SAT" class="logo" />
+                    <img src="./assets/images/logos/epq.png" alt="logo EPQ" class="logo" />
+                    <img src="./assets/images/logos/cdag.png" alt="logo CDAG" class="logo" />
+                    <img src="./assets/images/logos/pnc.png" alt="logo PNC" class="logo" />
+                    <img src="./assets/images/logos/sie.png" alt="logo SIE" class="logo" />
+                    <img src="./assets/images/logos/minfin.png" alt="logo Minfin" class="logo" />
+                    <img src="./assets/images/logos/mineco.png" alt="logo Mineco" class="logo" />
+                    <img src="./assets/images/logos/hfinanzas.png" alt="logo SEFIN Honduras" class="logo" />
+                    <img src="./assets/images/logos/oea.png" alt="logo OEA" class="logo" />
+                    <img src="./assets/images/logos/bid.png" alt="logo BID" class="logo" />
+                    <img src="./assets/images/logos/shacienda.png" alt="logo Ministerio de Hacienda" class="logo" />
+                    <img src="./assets/images/logos/usaid.png" alt="logo USAID" class="logo" />
+                    <img src="./assets/images/logos/infotec.png" alt="logo Infotec" class="logo" />
+                    <img src="./assets/images/logos/mef.png" alt="loga MEF" class="logo" />
 
-            <!-- Duplicados para loop infinito -->
-            <img src="./assets/images/logos/jrsys.png" alt="logo empresaJrsys" class="logo" />
-            <img src="./assets/images/logos/tigo.png" alt="logo Tigo" class="logo" />
-            <img src="./assets/images/logos/conseguros.png" alt="logo Conseguros" class="logo" />
-            <img src="./assets/images/logos/cmi.png" alt="logo CMI" class="logo" />
-            <img src="./assets/images/logos/energuate.png" alt="logo Energuate" class="logo" />
-            <img src="./assets/images/logos/url.png" alt="logo URL" class="logo" />
-            <img src="./assets/images/logos/sieca.png" alt="logo SIECA" class="logo" />
-            <img src="./assets/images/logos/sat.png" alt="logo SAT" class="logo" />
-            <img src="./assets/images/logos/epq.png" alt="logo EPQ" class="logo" />
-            <img src="./assets/images/logos/cdag.png" alt="logo CDAG" class="logo" />
-            <img src="./assets/images/logos/pnc.png" alt="logo PNC" class="logo" />
-            <img src="./assets/images/logos/sie.png" alt="logo SIE" class="logo" />
-            <img src="./assets/images/logos/minfin.png" alt="logo Minfin" class="logo" />
-            <img src="./assets/images/logos/mineco.png" alt="logo Mineco" class="logo" />
-            <img src="./assets/images/logos/hfinanzas.png" alt="logo SEFIN Honduras" class="logo" />
-            <img src="./assets/images/logos/oea.png" alt="logo OEA" class="logo" />
-            <img src="./assets/images/logos/bid.png" alt="logo BID" class="logo" />
-            <img src="./assets/images/logos/shacienda.png" alt="logo Ministerio de Hacienda" class="logo" />
-            <img src="./assets/images/logos/usaid.png" alt="logo USAID" class="logo" />
-            <img src="./assets/images/logos/infotec.png" alt="logo Infotec" class="logo" />
-            <img src="./assets/images/logos/mef.png" alt="loga MEF" class="logo" />
-        </div>
-      </div>
-    </section>
+                    <!-- Duplicados para loop infinito -->
+                    <img src="./assets/images/logos/jrsys.png" alt="logo empresaJrsys" class="logo" />
+                    <img src="./assets/images/logos/tigo.png" alt="logo Tigo" class="logo" />
+                    <img src="./assets/images/logos/conseguros.png" alt="logo Conseguros" class="logo" />
+                    <img src="./assets/images/logos/cmi.png" alt="logo CMI" class="logo" />
+                    <img src="./assets/images/logos/energuate.png" alt="logo Energuate" class="logo" />
+                    <img src="./assets/images/logos/url.png" alt="logo URL" class="logo" />
+                    <img src="./assets/images/logos/sieca.png" alt="logo SIECA" class="logo" />
+                    <img src="./assets/images/logos/sat.png" alt="logo SAT" class="logo" />
+                    <img src="./assets/images/logos/epq.png" alt="logo EPQ" class="logo" />
+                    <img src="./assets/images/logos/cdag.png" alt="logo CDAG" class="logo" />
+                    <img src="./assets/images/logos/pnc.png" alt="logo PNC" class="logo" />
+                    <img src="./assets/images/logos/sie.png" alt="logo SIE" class="logo" />
+                    <img src="./assets/images/logos/minfin.png" alt="logo Minfin" class="logo" />
+                    <img src="./assets/images/logos/mineco.png" alt="logo Mineco" class="logo" />
+                    <img src="./assets/images/logos/hfinanzas.png" alt="logo SEFIN Honduras" class="logo" />
+                    <img src="./assets/images/logos/oea.png" alt="logo OEA" class="logo" />
+                    <img src="./assets/images/logos/bid.png" alt="logo BID" class="logo" />
+                    <img src="./assets/images/logos/shacienda.png" alt="logo Ministerio de Hacienda" class="logo" />
+                    <img src="./assets/images/logos/usaid.png" alt="logo USAID" class="logo" />
+                    <img src="./assets/images/logos/infotec.png" alt="logo Infotec" class="logo" />
+                    <img src="./assets/images/logos/mef.png" alt="loga MEF" class="logo" />
+                </div>
+            </div>
+        </section>
 
-        <section id="servicios">
+        <section id="servicios" class="container">
             <h2>Nuestros Servicios</h2>
-            <div class="servicios-container">
-                <article>
+            <div class="servicios-container flex-s-b">
+                <article class="box">
                     <img src="./assets/images/iconos/s-consultoria.png" alt="icono" class="icono">
                     <h4 >Consultoría Estratégica y Proyectos Cloud</h4>
                     <a href="#">Ver más</a>
                 </article>
-                <article>
+                <article class="box">
                     <img src="./assets/images/iconos/s-desarrollo.png" alt="icono" class="icono">
                     <h4 >Desarrollo de Soluciones Avanzadas (IA & Full Stack)</h4>
                     <a href="#">Ver más</a>
                 </article>
-                <article>
+                <article class="box">
                     <img src="./assets/images/iconos/s-infraestructura.png" alt="icono" class="icono">
                     <h4 >Infraestructura, Bases de Datos y Optimización</h4>
                     <a href="#">Ver más</a>
@@ -159,15 +160,15 @@
             </div>
         </section>
 
-        <section id="cta">
-            <h1>ITecAdvanced:</h1>
-            <h2>Tu Socio Estratégico en Tecnología</h2>
+        <section id="cta" class="container">
+            <h2>ITecAdvanced</h2>
+            <h3>Tu Socio Estratégico en Tecnología</h3>
             <p>En ITecAdvanced, estamos comprometidos a ser más que un proveedor de servicios; somos tu socio estratégico, impulsando tu negocio hacia la excelencia digital.</p>
             <a href="mailto:info@gitecadvanced.com" class="btn">Contáctanos</a>
         </section>
     </main>
 
-    <footer>
+    <footer class="container">
         <p>Copyright © 2025 iTecAdvanced</p>
         <div>
             <a href="#">Términos y Condiciones</a>
