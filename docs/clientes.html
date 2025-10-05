@@ -10,24 +10,31 @@
     <!-- main header & menu -->
     <header class="header-menu container">
         <div class="header-content flex-s-b">
-            <div>
+            <div class="logo">
                 <a href="/index.html">
                     <img src="./assets/images/logo.png" alt="logo iTec" class="logo-itec">
                 </a>
             </div>
+
+            <button class="menu-toggle" aria-controls="main-nav-list" aria-expanded="false">
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+            </button>
             
-            <nav>
+            <nav class="main-nav" id="main-nav-list">
                 <a href="index.html">Home</a>
                 <a href="empresa.html">Quiénes Somos</a>
-                <a href="servicios.html">Servicios y Expertise</a>
-                <a href="clientes.html">Nuestros Clientes</a>
+                <a href="servicios.html">Servicios</a>
+                <a href="clientes.html">Clientes</a>
                 <a href="contacto.html">Contáctanos</a>
             </nav>
         </div>
     </header>
+
     <main class="container">
         <!-- intro pg -->
-        <header>
+        <header id="header">
             <h1>Clientes</h1>
             <p><span class="bold">Historias de Éxito y Confianza Mutua.</span>
                 En ITecAdvanced, estamos orgullosos de nuestra trayectoria de éxito, marcada por la implementación de soluciones tecnológicas que han generado un impacto tangible en la eficiencia, seguridad y rentabilidad de nuestros socios estratégicos a nivel regional.
@@ -75,7 +82,7 @@
     </main>
 
     <!-- footer -->
-    <footer class="container">
+    <footer class="container flex-s-b">
         <p>Copyright © 2025 iTecAdvanced</p>
         <div>
             <a href="#">Términos y Condiciones</a>
@@ -83,5 +90,8 @@
             <a href="#">Política de Privacidad</a>
         </div>
     </footer>
+    
+    <!-- js -->
+    <script src="./assets/js/menu.js"></script>
 </body>
 </html>

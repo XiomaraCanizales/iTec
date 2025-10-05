@@ -10,39 +10,46 @@
     <!-- main header & menu -->
     <header class="header-menu container">
         <div class="header-content flex-s-b">
-            <div>
+            <div class="logo">
                 <a href="/index.html">
                     <img src="./assets/images/logo.png" alt="logo iTec" class="logo-itec">
                 </a>
             </div>
+
+            <button class="menu-toggle" aria-controls="main-nav-list" aria-expanded="false">
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+            </button>
             
-            <nav>
+            <nav class="main-nav" id="main-nav-list">
                 <a href="index.html">Home</a>
                 <a href="empresa.html">Quiénes Somos</a>
-                <a href="servicios.html">Servicios y Expertise</a>
-                <a href="clientes.html">Nuestros Clientes</a>
+                <a href="servicios.html">Servicios</a>
+                <a href="clientes.html">Clientes</a>
                 <a href="contacto.html">Contáctanos</a>
             </nav>
         </div>
     </header>
+
     <main class="container">
         <!-- intro pg -->
-        <header>
+        <header id="header">
             <h1>Empresa</h1>
             <p><span class="bold">Liderazgo Basado en la Experiencia.</span> Conozca la visión, misión e historia que guían a ITecAdvanced. Nuestra trayectoria se fundamenta en un equipo con una década de expertise, comprometidos con la innovación continua.
             </p>
         </header>
         
         <!-- mision & vision -->
-        <section class="flex-s-b">
+        <section class="flex-s-b" id="mision-vision">
             <article class="box-2">
-                <h2>Nuestra Misión</h2>
+                <h2 class="yellow">Nuestra Misión</h2>
                 <p><span class="bold">Impulsar la Transformación Digital.</span> Brindar soluciones tecnológicas innovadoras y a la medida que catalicen la transformación digital de nuestros clientes.
                     Nuestro compromiso es entregar productos y servicios de calidad superior, apalancados en tecnologías de punta y talento calificado para consistentemente superar las expectativas del sector público y privado.
                 </p>
             </article>
             <article class="box-2">
-                <h2>Nuestra Visión</h2>
+                <h2 class="yellow">Nuestra Visión</h2>
                 <p><span class="bold">Referente Regional en Tecnología Integrada.</span> Ser el referente regional líder en la creación, implementación y gestión de soluciones tecnológicas integradas.
                     Aspiramos a ser reconocidos por la excelencia, innovación y calidad de nuestros servicios, liderando la transformación digital en la región y generando valor sostenible para nuestros clientes, aliados y comunidades.
                 </p>
@@ -57,7 +64,7 @@
 
             <article class="flex-s-b">
                 <div>
-                    <h3>Nuestra Historia
+                    <h3>Nuestra Historia:
                         <span class="line-break">Fundación y Visión Estratégica</span>
                     </h3>
                     <p>ITecAdvanced fue fundada en 2025 con una visión clara y disruptiva:  integrar la ingeniería avanzada con servicios tecnológicos complementarios para redefinir el mercado. 
@@ -100,7 +107,7 @@
     </main>
     
     <!-- footer -->
-    <footer class="container">
+    <footer class="container flex-s-b">
         <p>Copyright © 2025 iTecAdvanced</p>
         <div>
             <a href="#">Términos y Condiciones</a>
@@ -108,5 +115,8 @@
             <a href="#">Política de Privacidad</a>
         </div>
     </footer>
+
+    <!-- js -->
+    <script src="./assets/js/menu.js"></script>
 </body>
 </html>

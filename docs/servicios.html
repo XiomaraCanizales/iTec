@@ -10,24 +10,31 @@
     <!-- main header & menu -->
     <header class="header-menu container">
         <div class="header-content flex-s-b">
-            <div>
+            <div class="logo">
                 <a href="/index.html">
                     <img src="./assets/images/logo.png" alt="logo iTec" class="logo-itec">
                 </a>
             </div>
+
+            <button class="menu-toggle" aria-controls="main-nav-list" aria-expanded="false">
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+            </button>
             
-            <nav>
+            <nav class="main-nav" id="main-nav-list">
                 <a href="index.html">Home</a>
                 <a href="empresa.html">Quiénes Somos</a>
-                <a href="servicios.html">Servicios y Expertise</a>
-                <a href="clientes.html">Nuestros Clientes</a>
+                <a href="servicios.html">Servicios</a>
+                <a href="clientes.html">Clientes</a>
                 <a href="contacto.html">Contáctanos</a>
             </nav>
         </div>
     </header>
+
     <main class="container">
         <!-- intro pg -->
-        <header>
+        <header id="header">
             <h1>Servicios</h1>
             <p><span class="bold">Soluciones de Vanguardia, Valor Estratégico.</span>
                 Presentamos un portafolio de servicios diseñado para la transformación integral de su negocio.
@@ -38,11 +45,11 @@
         <!-- servicios -->
         <section id="servicios-pg" class="flex-s-b">
             <article class="box-2" id="consultoria">
-                <h3>Consultoría Estratégica y Proyectos Cloud</h3>
+                <h3 class="yellow">Consultoría Estratégica y Proyectos Cloud</h3>
                 <p>Brindamos consultoría de alto nivel enfocada en la transformación en la nube. 
                 Gestionamos proyectos de migración, optimización y escalabilidad, asegurando una transición fluida hacia arquitecturas transformacionales.
                 </p>
-                <div class="flex-s-b">
+                <div class="flex-s-b servcios-detalle">
                     <div class="box">
                         <h4>Especializaciones</h4>
                         <ul>
@@ -70,11 +77,11 @@
             </article>
 
             <article class="box-2" id="desarrollo">
-                <h3>Desarrollo de Soluciones Avanzadas (IA & Full Stack)</h3>
+                <h3 class="yellow">Desarrollo de Soluciones Avanzadas (IA & Full Stack)</h3>
                 <p>Creamos software y aplicaciones robustas utilizando metodologías Full Stack.
                 Integramos Inteligencia Artificial y analítica de Datos para construir soluciones inteligentes que generan valor predictivo.
                 </p>
-                <div class="flex-s-b">
+                <div class="flex-s-b servcios-detalle">
                     <div class="box">
                         <h4>Tipos de Sistemas</h4>
                         <ul>
@@ -104,11 +111,11 @@
             </article>
 
             <article class="box-2" id="infra">
-                <h3>Infraestructura, Bases de Datos y Optimización</h3>
+                <h3 class="yellow">Infraestructura, Bases de Datos y Optimización</h3>
                 <p>Diseñamos y administramos su infraestructura crítica, desde bases de datos hasta redes. 
                 Optimizamos sus procesos con enfoques ágiles y DevOps para máxima eficiencia operativa.
                 </p>
-                <div class="flex-s-b">
+                <div class="flex-s-b servcios-detalle">
                     <div class="box">
                         <h4>Infraestructura</h4>
                         <ul>
@@ -141,7 +148,7 @@
     </main>
     
     <!-- footer -->
-    <footer class="container">
+    <footer class="container flex-s-b">
         <p>Copyright © 2025 iTecAdvanced</p>
         <div>
             <a href="#">Términos y Condiciones</a>
@@ -149,5 +156,8 @@
             <a href="#">Política de Privacidad</a>
         </div>
     </footer>
+    
+    <!-- js -->
+    <script src="./assets/js/menu.js"></script>
 </body>
 </html>
