@@ -144,12 +144,25 @@ li { margin-bottom: 1rem; }
 .header-menu {
     background-color: var(--yinmn-blue);
     box-shadow: var(--shadow);
-    
+    position: relative;
+    z-index: 100;  
+    transition: all 0.3s ease-in-out;
+}
+
+.header-menu.sticky-active {
     position: fixed;
     top: 0; 
     left: 0; 
     width: 100%; 
-    z-index: 100;  
+}
+
+.header-placeholder {
+    display: none;
+    height: 60px;
+}
+
+.sticky-active + .header-placeholder {
+    display: block;
 }
 
 .logo-itec {
@@ -180,13 +193,14 @@ li { margin-bottom: 1rem; }
     position: absolute;
     top: 0;
     right: 0;
-    width: 70%;
+    width: 100%;
     height: 100vh;
     padding-top: 6rem;
     background-color: var(--yinmn-blue);
     box-shadow: var(--shadow);
     z-index: 15;
     flex-direction: column; 
+
 }
     
 .main-nav a {
@@ -334,11 +348,11 @@ footer {
     align-items: center;
 }
 
-footer a,
+/* footer a,
 footer p {
     color: var(--white-smoke);
     font-size: 0.8rem;
-}
+} */
 
 /* otras pgs */
 /* EMPRESA */
@@ -354,6 +368,51 @@ footer p {
 #servicios-pg { flex-direction: column; }
 .servcios-detalle { flex-direction: column; }
 
+/* CONTACTO */
+.contact-page {
+    padding: 80px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box; /* Important for padding/width calculation */
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: var(--satin-sheen-gold);
+    outline: none;
+}
+
+.btn-send {
+    font-size: 0.85rem;
+    border: none;
+}
+
+.linea {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid var(--air-superiority-blue);
+    text-align: center;
+}
 
 /* media query */
 @media (min-width: 992px) {
