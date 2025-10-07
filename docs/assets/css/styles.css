@@ -392,7 +392,7 @@ footer p {
     padding: 12px;
     border: 1px solid #ccc;
     border-radius: 6px;
-    box-sizing: border-box; /* Important for padding/width calculation */
+    box-sizing: border-box;
     transition: border-color 0.3s;
 }
 
@@ -508,11 +508,6 @@ footer p {
     .servicios-container {
         flex-direction: row;
     }
-
-    /* footer */
-    footer { flex-direction: row; }
-
-    footer p, footer div { padding: 0; }
 
     /* EMPRESA */
     #mision-vision { flex-direction: row; }
