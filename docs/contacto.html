@@ -44,11 +44,13 @@
         <section id="contact" class="contact-page">
             <div class="contact-container">
 
-                <form id="contact-form" action="your-server-script.php" method="POST">
+                <form id="contact-form" action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="9860140c-e90b-477d-b4a8-6f104d8f00bf" />
+                    <input type="hidden" name="subject" value="New Contact Form Submission from Web3Forms" />
                     
                     <div class="form-group">
-                        <label for="nombre">Nombre Completo</label>
-                        <input type="text" id="nombre" name="nombre" required>
+                        <label for="name">Nombre Completo</label>
+                        <input type="text" id="name" name="name" required>
                     </div>
                     
                     <div class="form-group">
@@ -62,8 +64,8 @@
                     </div>
                     
                     <div class="form-group">
-                        <label for="mensaje">Mensaje / Breve descripción del proyecto</label>
-                        <textarea id="mensaje" name="mensaje" rows="6" required></textarea>
+                        <label for="message">Mensaje / Breve descripción del proyecto</label>
+                        <textarea id="message" name="message" rows="6" required></textarea>
                     </div>
                     
                     <button type="submit" class="btn btn-send">Enviar Mensaje</button>
