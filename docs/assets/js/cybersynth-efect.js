@@ -190,9 +190,6 @@ class ParticleSystem {
         this.mouseTimer = setTimeout(() => {
             this.isMouseMoving = false;
         }, 100);
-                
-        // Update glow effect position
-        this.updateGlowEffect();
     }
             
     trackTouch(e) {
@@ -206,9 +203,6 @@ class ParticleSystem {
             this.mouseTimer = setTimeout(() => {
                 this.isMouseMoving = false;
             }, 100);
-                    
-            // Update glow effect position
-            
         }
     }
             
