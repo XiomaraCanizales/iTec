@@ -348,12 +348,6 @@ footer {
     align-items: center;
 }
 
-/* footer a,
-footer p {
-    color: var(--white-smoke);
-    font-size: 0.8rem;
-} */
-
 /* otras pgs */
 /* EMPRESA */
 #mision-vision { flex-direction: column; }
@@ -412,6 +406,19 @@ footer p {
     padding-top: 20px;
     border-top: 1px solid var(--air-superiority-blue);
     text-align: center;
+}
+
+/* pagina success */
+.extra-pgs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    height: 100vh;
+    background-color: var(--yinmn-blue);
+    color: var(--white-smoke);
+    z-index: 9;  
 }
 
 /* media query */
